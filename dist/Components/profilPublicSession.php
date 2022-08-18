@@ -58,7 +58,7 @@ session_start();
             <?php
             include '../Controllers/database.php';
             $nama = $_GET['datas'];
-            $query = mysqli_query($conn, "SELECT * FROM datas WHERE nama='$nama'");
+            $query = mysqli_query($conn, "SELECT * FROM datas WHERE nama='$nama' ORDER BY id DESC");
             $data = mysqli_fetch_array($query)
             ?>
             <div class="flex flex-col justify-center items-center text-black ">
@@ -166,7 +166,8 @@ session_start();
             <?php
             include '../Controllers/database.php';
             $nama = $_GET['datas'];
-            $query = mysqli_query($conn, "SELECT * FROM datas WHERE nama='$nama' AND audience = 'public'");
+            
+            $query = mysqli_query($conn, "SELECT * FROM datas WHERE nama='$nama' AND audience = 'public' ORDER BY id DESC");
             while ($data = mysqli_fetch_array($query)) {
             ?>
                 <div class="bg-slate-700 mt-3 pb-5 rounded-lg flex flex-col mb-3 justify-center items-center text-white w-full">

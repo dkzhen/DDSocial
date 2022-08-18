@@ -25,22 +25,22 @@ session_start();
           <input type="text" placeholder="Search" class=" input bg-transparent border-solid border-slate-800 input-bordered" />
         </div>
         <div class="dropdown dropdown-end">
-          <label tabindex="0" class="btn btn-ghost btn-circle avatar">
-            <div class="w-10 rounded-full">
-              <img src="../Assets/images/profil.jpg" />
-            </div>
-          </label>
-          <ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-white rounded-box w-52 text-black">
-            <li>
-              <a href="../../Components/profil.php" class="justify-between">
-                Profile
-                <span class="badge bg-red-500 text-white border-transparent">New</span>
-              </a>
-            </li>
-            <li><a>Settings</a></li>
-            <li><a>Logout</a></li>
-          </ul>
-        </div>
+    <button onclick="toggle()" tabindex="0" class="btn btn-ghost btn-circle avatar">
+      <div class="w-10 rounded-full">
+        <img src="../Assets/images/profil.jpg" />
+      </div>
+    </button>
+    <ul id="toggle" tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-white rounded-box w-52 text-black">
+      <li>
+        <a href="../../Components/profil.php" class="justify-between">
+          Profile
+          <span class="badge bg-red-500 text-white border-transparent">New</span>
+        </a>
+      </li>
+      <li><a>Settings</a></li>
+      <li><a href="../../Controllers/logout.php">Logout</a></li>
+    </ul>
+  </div>
       </div>
     </div>
   </div>
@@ -72,7 +72,7 @@ session_start();
     <?php
     include '../../Controllers/database.php';
     if (isset($_SESSION['browser']) || !isset($_SESSION['ip']) || empty($_SESSION['user'])) {
-      $query = mysqli_query($conn, "SELECT * FROM datas WHERE audience ='public'");
+      $query = mysqli_query($conn, "SELECT * FROM datas WHERE audience ='public' ORDER BY id DESC");
       while ($data = mysqli_fetch_array($query)) {
         echo '<div class="card w-96 my-5 bg-primary shadow-xl">
       <figure>
@@ -124,7 +124,7 @@ session_start();
     </div>';
       }
     }else{
-      $query2 = mysqli_query($conn, "SELECT * FROM datas WHERE nama='$nama' OR nama!='$nama' AND audience ='public'");
+      $query2 = mysqli_query($conn, "SELECT * FROM datas WHERE nama='$nama' OR nama!='$nama' AND audience ='public' ORDER BY id DESC");
       while ($data = mysqli_fetch_array($query2)) {
         echo '<div class="card w-96 my-5 bg-primary shadow-xl">
       <figure>
@@ -139,6 +139,7 @@ session_start();
       <div class="card-body">
         <h2 class="card-title">';
         $datas = [
+          'id' => $data['id'],
           'nama' => $data['nama'],
           'text' => $data['text'],
           'audience' => $data['audience'],
@@ -182,6 +183,19 @@ session_start();
     <p class="p-4">Copyright @2022 Dani Kurniawan</p>
   </div>
   <!-- view -->
+
+  <script>
+  function toggle() {
+    const toggle = document.getElementById('toggle');
+
+    if (toggle.style.display === 'block') {
+      toggle.style.display = 'none';
+    } else {
+      toggle.style.display = 'block';
+    }
+  }
+</script>
+
 </body>
 
 </html>

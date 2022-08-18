@@ -205,7 +205,7 @@ session_start();
             <!-- beranda -->
             <!-- footer -->
             <div class="bg-slate-700 flex flex-col justify-center items-center rounded-t-lg">
-                <p class="p-2">Copyright @2021 Dani Kurniawan</p>
+                <p class="p-2">Copyright @2022 Dani Kurniawan</p>
             </div>
             <!-- footer -->
         </div>

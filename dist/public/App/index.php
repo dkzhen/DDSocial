@@ -179,7 +179,7 @@ session_start();
     ?>
   </div>
   <div class="bg-white text-black -mt-6 flex flex-col justify-center items-center rounded-t-lg">
-    <p class="p-4">Copyright @2021 Dani Kurniawan</p>
+    <p class="p-4">Copyright @2022 Dani Kurniawan</p>
   </div>
   <!-- view -->
 </body>

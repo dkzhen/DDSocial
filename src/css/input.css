@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .select-audience{
+        display: inline-flex;
+        flex-shrink: 0;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        
+        height: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 15px;
+        line-height: 10px;
+        line-height: 1;
+        min-height: 10px;
+        border-width: 2px;
+        border-color: #33E9A0;
+        --tw-border-opacity: 1;
+        --tw-bg-opacity: 1;
+        background-color: hsl(var(--b1) / var(--tw-bg-opacity));
+        font-weight: 600;
+        transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter,
+        -webkit-text-decoration-color, -webkit-backdrop-filter;
+        transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow,
+        transform, filter, backdrop-filter;
+        transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow,
+        transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+        transition-duration: 200ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        border-radius: var(--rounded-btn, 15px);
+        background-image: linear-gradient(45deg, transparent 50%, currentColor 50%), linear-gradient(135deg, currentColor 50%,
+        transparent 50%);
+        background-position: calc(100% - 20px) calc(1px + 50%), calc(100% - 16px) calc(1px + 50%);
+        background-size: 4px 4px, 4px 4px;
+        background-repeat: no-repeat;
+        }
+   
+     }

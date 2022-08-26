@@ -10,6 +10,7 @@
 
 <body>
     <div>
+        <!-- navbar -->
         <div class="bg-beranda-main fixed top-0 left-0 right-0 z-50">
             <div class=" flex h-[4rem] justify-center">
                 <div
@@ -45,9 +46,11 @@
                 </div>
             </div>
         </div>
+        <!-- navbar -->
+        <!-- content -->
         <div class="mt-16 bg-beranda-bg flex justify-center w-full">
             <div class="flex flex-row bg-beranda-bg max-w-full lg:w-[75rem]">
-                <!-- left lg -->
+                <!-- button left lg -->
                 <div class="relative">
                     <div class="text-white hidden md:block lg:block">
                         <div class="flex flex-col items-start justify-center font-poppins fixed">
@@ -174,13 +177,14 @@
     </div>
     </div>
     </div>
-    <!-- left lg -->
-    <!-- mid -->
+    <!-- button left lg -->
+    <!-- content mid / post-->
     <div
         class="lg:ml-72 mr-28 md:mr-0 lg:mr-0 md:ml-20 flex flex-col items-start justify-center font-poppins text-white">
         <div class="">
             <div
                 class=" my-2 lg:my-0 md:ml-2 lg:mx-2 flex sm:w-[21rem] md:w-[38rem] lg:w-[37rem] flex-row items-center justify-start gap-3 rounded-xl bg-beranda-bg py-3 px-3">
+                <!-- story  -->
                 <!-- <div class="flex flex-row justify-start items-start">
                                 <div
                                     class="mx-2 bg-beranda-main relative w-24 h-36 flex items-center justify-center rounded-lg">
@@ -205,9 +209,10 @@
 
 
                             </div> -->
+                            <!-- story -->
 
             </div>
-
+<!-- create post -->
             <div
                 class=" my-2 lg:my-0 md:ml-2 lg:mx-2 flex sm:w-[21rem] md:w-[38rem] lg:w-[37rem] flex-col items-start justify-center gap-3 rounded-xl bg-beranda-main py-3 px-3">
                 <div class="flex flex-row w-full ">
@@ -216,7 +221,7 @@
                             alt="" /></div>
                     <div>
                         <div class="mt-2 ml-3">
-                            <label for="simple-search" class="sr-only">Search</label>
+                            <label for="simple-search" class="sr-only">What's your mind today?</label>
                             <div class="relative w-full">
                                 <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
                                     <svg aria-hidden="true" class="h-5 w-5 text-gray-500 dark:text-gray-400"
@@ -228,7 +233,7 @@
                                 </div>
                                 <input type="text" id="simple-search"
                                     class="block rounded-2xl border border-beranda-bg bg-beranda-bg py-2 pl-10 text-sm text-white focus:border-beranda-bg focus:ring-beranda-bg md:w-[31rem] lg:w-[30.5rem]"
-                                    placeholder="Search" required="" />
+                                    placeholder="What's your mind today?" required="" />
                             </div>
                         </div>
                     </div>
@@ -267,7 +272,8 @@
                 </div>
 
             </div>
-
+<!-- create post -->
+<!-- postingan -->
             <div
                 class=" my-4 lg:mx-2 md:ml-2 bg-blue- flex flex-col md:w-[38rem] w-[20rem] lg:w-[37rem] items-start justify-center bg-beranda-main rounded-xl px-4 py-3">
                 <div class="flex flex-row  w-full justify-between items-center">
@@ -378,8 +384,9 @@
             </div>
         </div>
     </div>
+    <!-- postingan -->
     <!-- mid -->
-    <!-- right sm -->
+    <!-- button right sm -->
     <div class="text-white block md:hidden lg:hidden">
         <div class="flex flex-col items-start justify-center font-poppins fixed right-0">
             <div class="">
@@ -454,8 +461,8 @@
             </div>
         </div>
     </div>
-    <!-- right sm -->
-    <!-- right -->
+    <!-- button right sm -->
+    <!-- button right message -->
     <div class="text-white hidden lg:block">
         <div class="flex flex-col items-start justify-center font-poppins fixed">
             <div class="">
@@ -576,7 +583,9 @@
         </div>
         <!-- right -->
     </div>
+    <!-- button right message -->
     <script>
+        // see more post card
         function seeMore() {
             var noMore = document.getElementById("nomore")
             var dots = document.getElementById("dots")
@@ -593,6 +602,7 @@
             }
         }
 
+        // button kiri 
         var header = document.getElementById("active");
         var btns = header.getElementsByClassName("button");
         for (var i = 0; i < btns.length; i++) {
@@ -602,62 +612,6 @@
                 this.className += " btn-active";
             });
         }
-
-        // const btnHome = document.getElementById('btn-home')
-        // const home = document.getElementById('home')
-        // const btnExplore = document.getElementById('btn-explore')
-        // const explore = document.getElementById('explore')
-        // const btnMessages = document.getElementById('btn-messages')
-        // const messages = document.getElementById('messages')
-        // const btnNotifications = document.getElementById('btn-notifications')
-        // const notifications = document.getElementById('notifications')
-        // const btnThemes = document.getElementById('btn-themes')
-        // const themes = document.getElementById('themes')
-        // const btnSettings = document.getElementById('btn-settings')
-        // const settings = document.getElementById('setting')
-
-        // if (btnHome.clicked === true) {
-        //         home.classList.add('bg-beranda-bg')
-        //         home.classList.add('border-l-4')
-        //         home.classList.add('border-l-green-400')
-        //         home.classList.add('text-green-400')
-        // }
-        // // btnHome.onclick = function(){
-        // //     home.classList.toggle('bg-beranda-bg')
-        // //     home.classList.toggle('border-l-4')
-        // //     home.classList.toggle('border-l-green-400')
-        // //     home.classList.toggle('text-green-400')
-        // // }
-        // btnExplore.onclick = function () {
-        //     explore.classList.toggle('bg-beranda-bg')
-        //     explore.classList.toggle('border-l-4')
-        //     explore.classList.toggle('border-l-green-400')
-        //     explore.classList.toggle('text-green-400')
-        // }
-        // btnMessages.onclick = function () {
-        //     messages.classList.toggle('bg-beranda-bg')
-        //     messages.classList.toggle('border-l-4')
-        //     messages.classList.toggle('border-l-green-400')
-        //     messages.classList.toggle('text-green-400')
-        // }
-        // btnNotifications.onclick = function () {
-        //     notifications.classList.toggle('bg-beranda-bg')
-        //     notifications.classList.toggle('border-l-4')
-        //     notifications.classList.toggle('border-l-green-400')
-        //     notifications.classList.toggle('text-green-400')
-        // }
-        // btnThemes.onclick = function () {
-        //     themes.classList.toggle('bg-beranda-bg')
-        //     themes.classList.toggle('border-l-4')
-        //     themes.classList.toggle('border-l-green-400')
-        //     themes.classList.toggle('text-green-400')
-        // }
-        // btnSettings.onclick = function () {
-        //     settings.classList.toggle('bg-beranda-bg')
-        //     settings.classList.toggle('border-l-4')
-        //     settings.classList.toggle('border-l-green-400')
-        //     settings.classList.toggle('text-green-400')
-        // }
     </script>
 </body>
 

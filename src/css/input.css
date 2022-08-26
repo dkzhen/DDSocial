@@ -3,6 +3,15 @@
 @tailwind utilities;
 
 @layer components{
+    .overflow-style{
+         -ms-overflow-style:none;
+         scrollbar-width:none;
+         scroll-behavior:smooth;
+        }
+   .btn-active{
+   @apply bg-beranda-bg border-l-4 border-l-green-400 text-green-400
+   }
+
     .select-audience{
         display: inline-flex;
         flex-shrink: 0;
@@ -42,5 +51,5 @@
         background-size: 4px 4px, 4px 4px;
         background-repeat: no-repeat;
         }
-   
+        
      }

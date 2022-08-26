@@ -6,12 +6,19 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors:{
-        'primary':'#33E9A0',
+      colors: {
+        'primary': '#33E9A0',
+        'beranda-bg': '#1F1A31',
+        'beranda-main': '#292444',
+        'beranda-red': '#E94A66'
       },
-      screens: {
-        's20': '412px',
+      fontFamily: {
+        'poppins': ['Poppins', 'sans - serif'],
       },
+      width:{
+        '100':'1080px'
+      },
+
     },
   },
   plugins: [

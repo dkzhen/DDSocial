@@ -21,7 +21,7 @@ function upload(){
         return false;
     }
     // cek size 
-    if ($ukuranFile > 1000000) { // max 1Mb dlm bit
+    if ($ukuranFile > 8000000000) { // max 1Mb dlm bit
         echo"<script>alert('Ukuran terlau besar');</script>";
         return false;
     }

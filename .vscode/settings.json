@@ -1,3 +1,7 @@
 {
-    "livePreview.defaultPreviewPath": "/dist/Components/editProfile.html"
+    "livePreview.defaultPreviewPath": "/dist/public/App/beranda.html",
+    "editor.fontSize": 18,
+    "window.zoomLevel": 1,
+    "workbench.iconTheme": "vscode-icons",
+
 }

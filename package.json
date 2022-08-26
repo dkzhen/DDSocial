@@ -10,6 +10,9 @@
     "watch:index": "postcss tailwindcss src/css/input.css -o dist/public/Styles/index.css --watch",
     "watch:post": "postcss tailwindcss src/css/input.css -o dist/public/Styles/post.css --watch",
     "watch:profil": "postcss tailwindcss src/css/input.css -o dist/public/Styles/profil.css --watch",
+    "watch:posting": "postcss tailwindcss src/css/input.css -o dist/public/Styles/posting.css --watch",
+    "watch:profilPublic": "postcss tailwindcss src/css/input.css -o dist/public/Styles/profilPublic.css --watch",
+    "watch:beranda": "postcss tailwindcss src/css/input.css -o dist/public/Styles/beranda.css --watch",
     "watch:editProfile": "postcss tailwindcss src/css/input.css -o dist/public/Styles/profilPublicSession.css --watch",
     "build": "cross-env NODE_ENV=production postcss src/css/input.css -o dist/css/style.css"
   },

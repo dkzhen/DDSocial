@@ -18,7 +18,14 @@ module.exports = {
       width:{
         '100':'1080px'
       },
-
+      backgroundImage: {
+        // 'profil-bg': "url('../public/Assets/bg/profil.jpg')",
+        // 'footer-texture': "url('/img/footer-texture.png')",
+      },
+      screens: {
+        'tall': { 'raw': '(min-height: 812px)' },
+        // => @media (min-height: 800px) { ... }
+      },
     },
   },
   plugins: [

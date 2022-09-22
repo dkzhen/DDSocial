@@ -65,9 +65,9 @@
                                         <div>username</div>
                                     </div>
                                 </div>
-                               
 
-                                <div id="active"
+
+                                <div id="active" 
                                     class=" my-2 flex w-[5rem] lg:w-[18rem] flex-col items-start justify-start gap-5 rounded-xl bg-beranda-main py-3 px-3">
                                     <label for="btn-home">
                                         <div
@@ -81,26 +81,27 @@
                                                         d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                                                 </svg>
                                             </div>
-                                    </label>
+                                        </label>
                                     <div class="hidden lg:block cursor-pointer"><button type="button"
-                                            id="btn-home">Home</button>
+                                            id="btn-home" onclick="home()">Home</button>
                                     </div>
                                 </div>
 
-                                <label for="btn-explore">
+                                
                                     <div id="active"
                                         class="button w-[18rem] flex flex-row items-start justify-start gap-5 -ml-3 pl-6 py-6 ">
+                                        <label for="btn-explore">
                                         <div>
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                stroke-width="1.5" stroke="currentColor" class="cursor-pointer w-6 h-6">
                                                 <path stroke-linecap="round" stroke-linejoin="round"
                                                     d="M20.893 13.393l-1.135-1.135a2.252 2.252 0 01-.421-.585l-1.08-2.16a.414.414 0 00-.663-.107.827.827 0 01-.812.21l-1.273-.363a.89.89 0 00-.738 1.595l.587.39c.59.395.674 1.23.172 1.732l-.2.2c-.212.212-.33.498-.33.796v.41c0 .409-.11.809-.32 1.158l-1.315 2.191a2.11 2.11 0 01-1.81 1.025 1.055 1.055 0 01-1.055-1.055v-1.172c0-.92-.56-1.747-1.414-2.089l-.655-.261a2.25 2.25 0 01-1.383-2.46l.007-.042a2.25 2.25 0 01.29-.787l.09-.15a2.25 2.25 0 012.37-1.048l1.178.236a1.125 1.125 0 001.302-.795l.208-.73a1.125 1.125 0 00-.578-1.315l-.665-.332-.091.091a2.25 2.25 0 01-1.591.659h-.18c-.249 0-.487.1-.662.274a.931.931 0 01-1.458-1.137l1.411-2.353a2.25 2.25 0 00.286-.76m11.928 9.869A9 9 0 008.965 3.525m11.928 9.868A9 9 0 118.965 3.525" />
                                             </svg>
 
                                         </div>
                                 </label>
-                                <div class="hidden lg:block cursor-pointer"><button type="button"
-                                        id="btn-explore ">Explore</button></div>
+                                <div class="hidden lg:block cursor-pointer"><button type="button" onclick="explore()"
+                                        id="btn-explore">Explore</button></div>
                             </div>
 
                             <label for="btn-notifications">
@@ -147,7 +148,7 @@
 
                             </div>
                     </label>
-                    <div class="hidden lg:block cursor-pointer"><button type="button" id="btn-themes ">Themes</button>
+                    <div class="hidden lg:block cursor-pointer"><button type="button" onclick="themes()" id="btn-themes ">Themes</button>
                     </div>
                 </div>
 
@@ -179,8 +180,8 @@
     </div>
     <!-- button left lg -->
     <!-- content mid / post-->
-    <div
-        class="lg:ml-72 mr-28 md:mr-0 lg:mr-0 md:ml-20 flex flex-col items-start justify-center font-poppins text-white">
+    <div id="Home"
+        class=" lg:ml-72 mr-28 md:mr-0 lg:mr-0 md:ml-20 flex flex-col items-start justify-center font-poppins text-white">
         <div class="">
             <div
                 class=" my-2 lg:my-0 md:ml-2 lg:mx-2 flex sm:w-[21rem] md:w-[38rem] lg:w-[37rem] flex-row items-center justify-start gap-3 rounded-xl bg-beranda-bg py-3 px-3">
@@ -209,10 +210,10 @@
 
 
                             </div> -->
-                            <!-- story -->
+                <!-- story -->
 
             </div>
-<!-- create post -->
+            <!-- create post -->
             <div
                 class=" my-2 lg:my-0 md:ml-2 lg:mx-2 flex sm:w-[21rem] md:w-[38rem] lg:w-[37rem] flex-col items-start justify-center gap-3 rounded-xl bg-beranda-main py-3 px-3">
                 <div class="flex flex-row w-full ">
@@ -272,8 +273,225 @@
                 </div>
 
             </div>
-<!-- create post -->
-<!-- postingan -->
+            <!-- create post -->
+            <!-- postingan -->
+            <div
+                class=" my-4 lg:mx-2 md:ml-2 bg-blue- flex flex-col md:w-[38rem] w-[20rem] lg:w-[37rem] items-start justify-center bg-beranda-main rounded-xl px-4 py-3">
+                <div class="flex flex-row  w-full justify-between items-center">
+                    <div class="flex flex-row items-center justify-between">
+                        <div><img class="h-10 w-10 rounded-full"
+                                src="https://media.istockphoto.com/id/1336288085/photo/shot-of-an-attractive-young-woman-standing-alone-at-home-and-spraying-perfume-in-the-morning.webp?s=612x612&w=is&k=20&c=CENiUXTGVghEIvsNtrIHj3Y0hhQDUCwT-aLwFxBP1O8="
+                                alt="" /></div>
+                        <div class="flex flex-col justify-center items-start ml-3">
+                            <div class="text-lg font-semibold">Dani Kurniawan</div>
+                            <div class="flex flex-row items-cnter justify-center gap-2">
+                                <div class="text-xs">21 August 2022</div>
+                                <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+                                    </svg>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                        </svg>
+                    </div>
+                </div>
+                <div id="readmore" class="px-2 my-2">Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit.
+                    Consequuntur sed ad nam
+                    sequi dignissimos doloremque consectetur magnam ratione voluptate corporis minima
+                    earum dolor qui nesciunt libero asperiores repellendus, illum mollitia. Iusto natus
+                    a obcaecati numquam, accusamus, <span id="dots">...</span><button class="font-bold"
+                        onclick="seeMore()">See More</button>
+                </div>
+                <div id="nomore" class="px-2 my-2 hidden">Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit.
+                    CDOT
+                    sequi dignissimos doloremque consectetur magnam ratione voluptate corporis minima
+                    earum dolor qui nesciunt libero asperiores repellendus, illum mollitia. Iusto natus
+                    a obcaecati numquam, accusamus, ducimus laborum eaque fugit blanditiis magnam fuga
+                    doloribus, sapiente dolor. Architecto sed veritatis, perferendis officiis deserunt
+                    recusandae ex rerum dignissimos porro qui culpa expedita enim itaque esse aliquid
+                </div>
+                <div id="full" class="px-2 my-2 hidden">Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit.
+                    Consequuntur sed ad nam
+                    sequi dignissimos doloremque consectetur magnam ratione voluptate corporis minima
+                    earum dolor qui nesciunt libero asperiores repellendus, illum mollitia. Iusto natus
+                    a obcaecati numquam, accusamus, ducimus laborum eaque fugit blanditiis magnam fuga
+                    doloribus, sapiente dolor. Architecto sed veritatis, perferendis officiis deserunt
+                    recusandae ex rerum dignissimos porro qui culpa expedita enim itaque esse aliquid
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius vero alias beatae
+                    tenetur, doloribus reiciendis ipsum assumenda natus molestiae a sapiente eveniet
+                    asperiores animi veritatis, laboriosam magni eligendi magnam molestias facilis, fuga
+                    in. Deserunt itaque accusantium reiciendis autem unde corrupti numquam ea cumque
+                    expedita voluptate nulla a, excepturi nesciunt, debitis vero dignissimos?
+                    Perferendis repellendus mollitia ab voluptates optio sunt earum facilis ratione
+                    aspernatur consectetur? Expedita tempora voluptatibus architecto earum eum repellat
+                    velit dicta dolorum, delectus dolor at mollitia unde natus ullam nemo laborum alias
+                    incidunt cum, excepturi debitis ipsum qui ea quia! Molestiae repellat sunt fuga
+                    saepe culpa optio deleniti?
+                </div>
+                <div class="px-2"><img src="https://media.istockphoto.com/photos/water-background-picture-id1402439868"
+                        alt=""></div>
+                <div class="flex flex-row w-full px-0 md:px-3 lg:px-3 justify-between items-center mt-2 ">
+                    <div class="flex flex-row justify-center items-center cursor-pointer hover:text-blue-600">
+                        <Label class="cursor-pointer text-white hover:text-blue-600" for="like"><svg
+                                class="w-6 h-6 md:w-8 lg:w-8 md:h-8 lg:h-8" xmlns="http://www.w3.org/2000/svg"
+                                width="288" height="288" viewBox="0 0 8.467 8.467">
+                                <path
+                                    style="line-height:normal;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;text-orientation:mixed;shape-padding:0;isolation:auto;mix-blend-mode:normal"
+                                    fill="#33E9A0"
+                                    d="M1.322 7.674a.535.535 0 0 1-.53-.53V3.44c0-.289.242-.53.53-.53h.795c.196 0 .368.113.46.275.178-.11.353-.174.466-.239.266-.154.402-.586.465-1.037.031-.225.048-.442.076-.623.014-.09.027-.17.064-.258a.353.353 0 0 1 .32-.235c.393 0 .715.154.92.39.206.235.302.53.354.822.084.478.052.883.036 1.172h1.6c.436 0 .796.358.796.793 0 .154-.044.27-.1.45-.056.181-.131.399-.215.632-.166.466-.364.994-.494 1.383a1.32 1.32 0 0 1-.24.459.724.724 0 0 1-.539.251H2.91a.774.774 0 0 1-.264-.049v.05c0 .288-.24.529-.529.529zm0-.53h.795V3.44h-.795zm1.588-.529h3.176c.07 0 .092-.014.138-.068a.913.913 0 0 0 .14-.282c.135-.405.333-.932.497-1.392.082-.23.156-.443.207-.61.052-.166.077-.316.077-.294a.259.259 0 0 0-.266-.264H5.004a.265.265 0 0 1-.266-.266c0-.312.068-.87-.015-1.344-.042-.236-.12-.435-.233-.564a.607.607 0 0 0-.378-.199c-.027.151-.045.409-.079.65-.069.493-.199 1.117-.726 1.422-.197.113-.387.18-.5.258-.114.078-.16.12-.16.307v2.38c0 .152.112.266.263.266z"
+                                    class="color000 svgShape" color="#000" font-family="sans-serif" font-weight="400"
+                                    overflow="visible" />
+                            </svg></Label>
+                        <div><input type="button" id="like"> Like</div>
+                    </div>
+
+                    <div class="flex flex-row justify-center items-center gap-2">
+                        <label for="comment">
+                            <svg class="w-5 h-5 md:w-7 lg:w-7 md:h-7 lg:h-7" xmlns="http://www.w3.org/2000/svg"
+                                width="288" height="288" fill="none" viewBox="0 0 16 16">
+                                <path fill="#33E9A0"
+                                    d="M1 4.5C1 3.11929 2.11929 2 3.5 2H12.5C13.8807 2 15 3.11929 15 4.5V9.5C15 10.8807 13.8807 12 12.5 12H8.68787L5.62533 14.6797C4.99168 15.2342 4 14.7842 4 13.9422V12H3.5C2.11929 12 1 10.8807 1 9.5V4.5ZM3.5 3C2.67157 3 2 3.67157 2 4.5V9.5C2 10.3284 2.67157 11 3.5 11H5V13.8981L8.31213 11H12.5C13.3284 11 14 10.3284 14 9.5V4.5C14 3.67157 13.3284 3 12.5 3H3.5Z"
+                                    class="color212121 svgShape" />
+                            </svg>
+                        </label>
+                        <div><input type="button">Comment</div>
+                    </div>
+
+                    <div class="flex -flex-row justify-center items-center gap-2">
+                        <label for="share">
+                            <div class="text-white"><svg class="w-6 h-6 md:w-8 lg:w-8 md:h-8 lg:h-8"
+                                    xmlns="http://www.w3.org/2000/svg" width="288" height="288" viewBox="0 0 512 512">
+                                    <path fill="#33E9A0"
+                                        d="M352 377.9H102.4V198.2h57.5s14.1-19.7 42.7-38.2H83.2c-10.6 0-19.2 8.5-19.2 19.1V397c0 10.5 8.6 19.1 19.2 19.1h288c10.6 0 19.2-8.5 19.2-19.1V288L352 319.4v58.5zM320 224v63.9l128-95.5L320 96v59.7C165.2 155.7 160 320 160 320c43.8-71.5 76-96 160-96z"
+                                        class="color000 svgShape" />
+                                </svg></div>
+                        </label>
+                        <div><input type="button">Share</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+   
+    <!-- postingan -->
+    <!-- mid -->
+
+     <!-- notifications -->
+     
+    <!-- notifications -->
+
+
+    <!-- mid 2 -->
+    <div id="midDua"
+        class="hidden text-red-500 lg:ml-72 mr-28 md:mr-0 lg:mr-0 md:ml-20 flex-col items-start justify-center font-poppins ">
+        <div class="">
+            <div
+                class=" my-2 lg:my-0 md:ml-2 lg:mx-2 flex sm:w-[21rem] md:w-[38rem] lg:w-[37rem] flex-row items-center justify-start gap-3 rounded-xl bg-beranda-bg py-3 px-3">
+                <!-- story  -->
+                <!-- <div class="flex flex-row justify-start items-start">
+                                <div
+                                    class="mx-2 bg-beranda-main relative w-24 h-36 flex items-center justify-center rounded-lg">
+                                    <img class="absolute w-full h-full rounded-lg object-cover"
+                                        src="https://images.unsplash.com/photo-1661441514034-f8f81780944c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+                                        alt="">
+                                </div>
+
+                                <div
+                                    class="mx-2 bg-beranda-main relative w-24 h-36 flex items-center justify-center rounded-lg">
+                                    <img class="absolute w-full h-full object-cover rounded-lg"
+                                        src="https://images.unsplash.com/photo-1657214058406-bb36358fe2f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                        alt="">
+                                </div>
+
+                                <div
+                                    class="mx-2 bg-beranda-main relative w-24 h-36 flex items-center justify-center rounded-lg">
+                                    <img class="absolute w-full h-full object-none object-center rounded-lg"
+                                        src="https://images.unsplash.com/photo-1657214058406-bb36358fe2f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                        alt="">
+                                </div>
+
+
+                            </div> -->
+                <!-- story -->
+
+            </div>
+            <!-- create post -->
+            <div
+                class=" my-2 lg:my-0 md:ml-2 lg:mx-2 flex sm:w-[21rem] md:w-[38rem] lg:w-[37rem] flex-col items-start justify-center gap-3 rounded-xl bg-beranda-main py-3 px-3">
+                <div class="flex flex-row w-full ">
+                    <div class="pl-2"><img class="h-14 w-14 rounded-full"
+                            src="https://media.istockphoto.com/id/1336288085/photo/shot-of-an-attractive-young-woman-standing-alone-at-home-and-spraying-perfume-in-the-morning.webp?s=612x612&w=is&k=20&c=CENiUXTGVghEIvsNtrIHj3Y0hhQDUCwT-aLwFxBP1O8="
+                            alt="" /></div>
+                    <div>
+                        <div class="mt-2 ml-3">
+                            <label for="simple-search" class="sr-only">What's your mind today?</label>
+                            <div class="relative w-full">
+                                <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                                    <svg aria-hidden="true" class="h-5 w-5 text-gray-500 dark:text-gray-400"
+                                        fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <input type="text" id="simple-search"
+                                    class="block rounded-2xl border border-beranda-bg bg-beranda-bg py-2 pl-10 text-sm text-white focus:border-beranda-bg focus:ring-beranda-bg md:w-[31rem] lg:w-[30.5rem]"
+                                    placeholder="What's your mind today?" required="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:flex lg:flex flex-row justify-between items-center w-full px-3">
+                    <div class="flex flex-row justify-between items-center gap-3">
+                        <label class="mt-2 " for="video"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round"
+                                    d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z" />
+                            </svg>
+                        </label>
+                        <div><input type="button" id="video">Video</div>
+                    </div>
+                    <div class="flex flex-row justify-between items-center gap-3">
+                        <label class="mt-2" for="images"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zM18.75 10.5h.008v.008h-.008V10.5z" />
+                            </svg>
+                        </label>
+                        <div><input type="button" id="images">Images</div>
+                    </div>
+                    <div class="flex flex-row justify-between items-center gap-3">
+                        <label class="mt-2" for="emoji"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.182 16.318A4.486 4.486 0 0012.016 15a4.486 4.486 0 00-3.198 1.318M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
+                            </svg>
+
+                        </label>
+                        <div><input type="button" id="emoji">Feeling</div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- create post -->
+            <!-- postingan -->
             <div
                 class=" my-4 lg:mx-2 md:ml-2 bg-blue- flex flex-col md:w-[38rem] w-[20rem] lg:w-[37rem] items-start justify-center bg-beranda-main rounded-xl px-4 py-3">
                 <div class="flex flex-row  w-full justify-between items-center">
@@ -384,8 +602,10 @@
             </div>
         </div>
     </div>
-    <!-- postingan -->
-    <!-- mid -->
+    <!-- mid 2 -->
+
+
+
     <!-- button right sm -->
     <div class="text-white block md:hidden lg:hidden">
         <div class="flex flex-col items-start justify-center font-poppins fixed right-0">
@@ -584,6 +804,35 @@
         <!-- right -->
     </div>
     <!-- button right message -->
+
+    <!-- themes -->
+    <div id="themes" class="hidden bg-red-500 h-[30rem] ml-[15rem] -z-100 mt-12 fixed lg:w-[45rem] rounded-2xl shadow-xl">
+        <div class="flex flex-col text-black items-center justify-center">
+            <div class="flex flex-col justify-center items-center  mt-7">
+                <div class="text-2xl font-bold font-poppins px-16">Customize your view</div>
+                <div class="text-base">Manage your color and backgroud.</div>
+            </div>
+            <div class="flex flex-col justify-center items-center  mt-24  w-[40rem]">
+                <div class="text-lg mb-4">Choose Color</div>
+                <div class="flex flex-row justify-between mb-6 items-center bg-white px-2 py-[6px] rounded-2xl w-full">
+                    <button class="bg-red-600 w-8 h-8  rounded-full"><div class=" text-center"></div></button>
+                    <button class="bg-blue-600 w-8 h-8  rounded-full"><div class=" text-center"></div></button>
+                    <button class="bg-green-400 w-8 h-8  rounded-full"><div class=" text-center"></div></button>
+                    <button class="bg-yellow-300 w-8 h-8  rounded-full"><div class=" text-center"></div></button>
+                    <button class="bg-purple-500 w-8 h-8  rounded-full"><div class=" text-center"></div></button>
+                </div>
+            </div>
+            <div class="flex flex-col justify-center items-center mt-12  w-[40rem]">
+                <div class="text-lg mb-4">Choose Background Color</div>
+                <div class="flex justify-between items-center w-full">
+                <button class="bg-white w-36 h-10  rounded-lg border-2 border-black"><div>Light</div></button>
+                <button class="bg-beranda-bg w-36 h-10  rounded-lg border-2 border-black"><div class="text-white">Official</div></button>
+                <button class="bg-black w-36 h-10  rounded-lg border-2 border-black"><div class="text-white">Dark</div></button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- themes -->
     <script>
         // see more post card
         function seeMore() {
@@ -612,6 +861,71 @@
                 this.className += " btn-active";
             });
         }
+
+        // explore
+        
+        function home(){
+        
+            const home = document.querySelector('#Home')
+        const midDua = document.querySelector('#midDua')
+        const themes = document.querySelector('#themes')
+        if(home.style.display === 'flex'){
+                home.style.display ='flex';
+            }else{
+                themes.style.display='none';
+                midDua.style.display ='none'
+                home.style.display ='flex';
+        }}
+
+        function explore(){
+            const home = document.querySelector('#Home')
+        const midDua = document.querySelector('#midDua')
+        const themes = document.querySelector('#themes')
+        if(midDua.style.display === 'none'){
+                midDua.style.display ='flex';
+                home.style.display ='none'
+                themes.style,display='none'
+                
+            }else{
+                themes.style,display='none'
+                home.style.display ='none'
+                midDua.style.display='flex';
+                
+                
+            }}
+
+            function themes(){
+        
+        const home = document.querySelector('#Home')
+        const midDua = document.querySelector('#midDua')
+        const themes = document.querySelector('#themes')
+
+        if(themes.style.display === 'none'){
+            themes.style.display='flex';
+            home.style.display ='flex'
+                midDua.style.display='none'
+                
+                
+            }else if(themes.style.display === 'none'){
+                themes.style.display='none';
+                home.style.display ='flex'
+                midDua.style.display='none'
+            }else{
+                themes.style.display='none';
+                home.style.display ='flex'
+                midDua.style.display='none'  
+            }    
+            }
+
+        // btnhome.addEventListener('click', function(){
+        //     
+                
+        //     }
+        // })
+        // btnexp.addEventListener('click', function(){
+        //     
+        // })
+        
     </script>
 </body>
 

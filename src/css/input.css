@@ -11,6 +11,9 @@
    .btn-active{
    @apply bg-beranda-bg border-l-4 border-l-green-400 text-green-400
    }
+   .btn-active-red{
+   @apply bg-beranda-bg border-l-4 border-l-red-600 text-red-600
+   }
 
     .select-audience{
         display: inline-flex;
